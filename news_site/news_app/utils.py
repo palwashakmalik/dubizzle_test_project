@@ -15,6 +15,6 @@ def get_news_articles(search_text, from_date, sort_by, language):
 
     if response.status_code == 200:
         data = response.json()
-        return data
+        return JsonResponse({"data": data}, status=200)
     else:
         return JsonResponse({"error": "Failed to fetch data"}, status=500)

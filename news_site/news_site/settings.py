@@ -26,6 +26,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'news_app',
+    'corsheaders',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -96,5 +98,8 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+CORS_ORIGIN_WHITELIST = [
+     'http://localhost:3000'
+]
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
