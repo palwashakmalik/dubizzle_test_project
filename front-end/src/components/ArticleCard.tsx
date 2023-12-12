@@ -15,7 +15,7 @@ interface ArticleCardProps {
 }
 
 const ArticleCard = ({ article }: ArticleCardProps) => {
-  const placeholderImage = 'defaultarticleimage.png';
+  const placeholderImage = 'defaultArticleImage.png';
 
   return (
     <Card>
