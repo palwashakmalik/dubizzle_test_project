@@ -13,13 +13,13 @@ Ensure you have the following installed:
 
 ## Getting Started
 
+## Backend Setup
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/palwashakmalik/dubizzle_test_project.git
 2. **Navigate to the project directory:**
     ```sh
     cd dubizzle_test_project
-    git checkout dev
     ```
 
 3. **Create a virtual environment:**
@@ -54,9 +54,18 @@ Ensure you have the following installed:
     ```
 Open your browser and navigate to http://localhost:8000.
 
+## Frontend Setup
 Open another Terminal and navigate to the project directory
 
 ```
-cd front-end
+cd dubizzle_test_project/front-end 
 ```
-Now follow the README.md file in front-end folder
+
+1. **Install the dependencies**
+    ```sh
+    npm install
+    ```
+2. **Run the server:**
+    ```sh
+    npm start
+    ```
