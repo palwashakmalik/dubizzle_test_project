@@ -12,8 +12,9 @@ class NewsAPITest(TestCase):
     def test_news_articles_view(self):
         # Test case 1: All parameters provided
         request = self.factory.get(
-            '/news', {'q': 'netflix', 'from': "2023-12-10", 'sortBy': 'publishedAt', 'language': 'en'})
+            '/news', {'q': 'netflix', 'from': "2023-12-10", 'sortBy': 'publishedAt', 'language': 'en', 'page':'1', 'pageSize': '100'})
         response = news_articles_view(request)
+        print(response)
         self.assertEqual(response.status_code, 200)
 
         # Test case 2: Missing some parameters

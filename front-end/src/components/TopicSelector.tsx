@@ -24,7 +24,7 @@ const TopicSelector = ({ onTopicsChange }: TopicSelectorProps) => {
 
   return (
     <Box>
-      <Typography variant="body2">Select Topics:</Typography>
+      <Typography variant="body2">Selected Topics:</Typography>
       {topicsList.map((topic) => (
         <Chip
           key={topic}
