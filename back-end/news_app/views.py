@@ -11,12 +11,16 @@ def news_articles_view(request):
     from_date = request.GET.get('from')
     sort_by = request.GET.get('sortBy')
     language = request.GET.get('language')
+    pageSize= request.GET.get('pageSize')
+    page= request.GET.get('page')
     params = {
         key: value for key, value in {
             "q": search_text,
             "from": from_date,
             "sortBy": sort_by,
             "language": language,
+            "page": page,
+            "pageSize": pageSize
         }.items() if value is not None
     }
     response = get_news_articles(params)
